@@ -14,7 +14,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
+      
+      - name: Set execute permissions for checkin.sh
+        run: chmod +x checkin.sh
       - name: checkin
         env:
           COOKIE: ${{ secrets.COOKIE }}
