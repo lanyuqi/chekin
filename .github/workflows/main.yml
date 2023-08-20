@@ -20,5 +20,6 @@ jobs:
       - name: checkin
         env:
           COOKIE: ${{ secrets.COOKIE }}
+          SCKEY: ${{ secrets.SCKEY }}
         run: |
           ./checkin.sh
